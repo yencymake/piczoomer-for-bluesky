@@ -1,0 +1,44 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Build extension package
+        run: npm run package
+
+      - name: Write release notes
+        shell: bash
+        run: |
+          cat > release-notes.md <<'EOF'
+          PicZoomer v1.0.0 initial public release.
+
+          Highlights:
+          - Adds mouse-wheel zooming for images opened in the Bluesky web lightbox.
+          - Adds drag-to-pan controls for magnified images.
+          - Double-click resets the image scale and position.
+
+          Install:
+          1. Download piczoomer-v1.0.0.zip from this release.
+          2. Unzip it locally.
+          3. Open chrome://extensions/, enable Developer mode, and load the unzipped folder.
+
+          Privacy: no analytics, no tracking, no remote code, and no Chrome extension API permissions.
+          EOF
+
+      - name: Publish GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release create "$GITHUB_REF_NAME" "release/piczoomer-$GITHUB_REF_NAME.zip" --title "PicZoomer $GITHUB_REF_NAME" --notes-file release-notes.md

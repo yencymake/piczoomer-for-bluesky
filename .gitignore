@@ -1,0 +1,21 @@
+node_modules/
+.venv/
+/.private/
+/tmp/
+/release/
+
+# Local release submission notes
+/store-assets/STORE_LISTING.local.md
+
+# Private store asset source captures and oversized generation inputs
+/store-assets/screenshots/raw/
+/store-assets/test-post/
+/icons/icon1024.png
+
+# Playwright artifacts
+/test-results/
+/test-report/
+/tests/tmp_test_data/
+
+# Logs
+*.log
