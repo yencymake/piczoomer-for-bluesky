@@ -2,6 +2,8 @@
 
 PicZoomer adds mouse-wheel zooming and drag-to-pan controls to images opened in the [Bluesky](https://bsky.app/) web lightbox.
 
+![PicZoomer preview](store-assets/final/promotional/marquee-1400x560.png)
+
 > PicZoomer is an independently developed third-party extension. It is not affiliated with, sponsored by, endorsed by, or officially connected to Bluesky Social PBC.
 
 ## Features
@@ -14,7 +16,9 @@ PicZoomer adds mouse-wheel zooming and drag-to-pan controls to images opened in 
 
 ### Chrome Web Store
 
-The store link will be added after review.
+[![Available in the Chrome Web Store](https://developer.chrome.com/static/docs/webstore/branding/image/mPGKYBIR2uCP0ApchDXE.png)](https://chromewebstore.google.com/detail/ihcfdjhdfhifgjkjiiicimdhgoghhbpp)
+
+Install PicZoomer from the [Chrome Web Store](https://chromewebstore.google.com/detail/ihcfdjhdfhifgjkjiiicimdhgoghhbpp).
 
 ### Developer Mode
 
@@ -65,7 +69,7 @@ release/piczoomer-v1.0.0.zip
 
 The release package contains only the runtime files required by the extension: Manifest, content script, and standard icon sizes.
 
-Chrome Web Store listing assets are kept out of the public repository.
+Raw Chrome Web Store listing source assets are kept out of the public repository.
 
 ## License
 
