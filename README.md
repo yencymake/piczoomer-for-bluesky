@@ -20,6 +20,8 @@ PicZoomer adds mouse-wheel zooming and drag-to-pan controls to images opened in 
 
 Install PicZoomer from the [Chrome Web Store](https://chromewebstore.google.com/detail/ihcfdjhdfhifgjkjiiicimdhgoghhbpp).
 
+Install note: Chrome Enhanced Safe Browsing may show a warning because PicZoomer is newly published by a new publisher. This does not mean the extension failed Chrome Web Store review. PicZoomer runs only on `https://bsky.app/*`, requests no Chrome extension API permissions, and does not collect or transmit data.
+
 ### Developer Mode
 
 1. Download and unzip the latest GitHub Release ZIP.
